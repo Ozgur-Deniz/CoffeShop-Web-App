@@ -8,7 +8,7 @@ function Footer() {
       <div className="footerContainer">
         <img
           className="footerLogo"
-          src="../../src/images/coffee-beans.png"
+          src="/images/coffee-beans.png"
           alt=""
         />
         <h1 className="footerHeading">THE COFFEE CO.</h1>

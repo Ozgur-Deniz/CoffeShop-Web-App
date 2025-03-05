@@ -14,7 +14,7 @@ function Header() {
   return (
     <div className="headerContainer">
       <div className="logoContainer" onClick={() => navigate("/")}>
-        <img className="logo" src="../../src/images/coffee-beans.png" alt="" />
+        <img className="logo" src="/images/coffee-beans.png" alt="" />
         <h1 className="logoText">
           TheCoffee<sup>©</sup>
         </h1>

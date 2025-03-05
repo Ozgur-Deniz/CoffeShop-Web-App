@@ -9,10 +9,10 @@ function Home() {
     <div className="homeContainer">
       <div className="home">
       <div className="containerPhoto">
-        <img className="firstPhoto" src="../../src/images/coffee.jpg" alt="" />
+        <img className="firstPhoto" src="/images/coffee.jpg" alt="" />
         <img
           className="secondPhoto"
-          src="../../src/images/coffeMan.jpg"
+          src="/images/coffeMan.jpg"
           alt=""
         />
       </div>

@@ -12,7 +12,7 @@ function Gallery() {
           url: 'https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D'
         },
         {
-          url: '../src/images/coffeePhoto.jpg'
+          url: '/images/coffeePhoto.jpg'
         },
       ];
 
