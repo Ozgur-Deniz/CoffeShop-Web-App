@@ -8,42 +8,42 @@ To provide a better understanding of the CoffeeShop app’s user interface and f
 
 ### App Homepage
 ```md
-![Homepage Screenshot](assets/Home.png)
+![Homepage Screenshot](https://raw.githubusercontent.com/Ozgur-Deniz/CoffeShop-Web-App/main/public/assets/Home.png)
 ```
 
 ### Menu Page
 ```md
-![Menu Screenshot](./assets/Menu.png)
+![Menu Screenshot](https://raw.githubusercontent.com/Ozgur-Deniz/CoffeShop-Web-App/main/public/assets/Menu.png)
 ```
 
 ### Product Details Page
 ```md
-![Product Details Screenshot](./public/assets/ProductDetails.png)
+![Product Details Screenshot](https://raw.githubusercontent.com/Ozgur-Deniz/CoffeShop-Web-App/main/public/assets/ProductDetails.png)
 ```
 
 ### About Us Page
 ```md
-![About Us Screenshot](./public/assets/AboutUs.png)
+![About Us Screenshot](https://raw.githubusercontent.com/Ozgur-Deniz/CoffeShop-Web-App/main/public/assets/AboutUs.png)
 ```
 
 ### Add Comment Page
 ```md
-![Add Comment Screenshot](./public/assets/AddComment.png)
+![Add Comment Screenshot](https://raw.githubusercontent.com/Ozgur-Deniz/CoffeShop-Web-App/main/public/assets/AddComment.png)
 ```
 
 ### Wish List Page
 ```md
-![Wish List Screenshot](./public/assets/WishList.png)
+![Wish List Screenshot](https://raw.githubusercontent.com/Ozgur-Deniz/CoffeShop-Web-App/main/public/assets/WishList.png)
 ```
 
 ### Cart and Checkout Page
 ```md
-![Cart Screenshot](./public/assets/Basket.png)
+![Cart Screenshot](https://raw.githubusercontent.com/Ozgur-Deniz/CoffeShop-Web-App/main/public/assets/Basket.png)
 ```
 
 ### Footer Page
 ```md
-![Footer Screenshot](./public/assets/Footer.png)
+![Footer Screenshot](https://raw.githubusercontent.com/Ozgur-Deniz/CoffeShop-Web-App/main/public/assets/Footer.png)
 ```
 
 ## 🚀 Features
