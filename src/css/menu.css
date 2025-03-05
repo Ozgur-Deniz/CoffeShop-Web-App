@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menuHeading {
+    letter-spacing: 15px;
+    color: grey;
+    border-bottom: 5px solid grey;
+    text-align: center;
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.menuText {
+    font-size: 80px;
+    font-family: "Gwendolyn", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #986b54;
+    opacity: 0.4;
+    background: linear-gradient(180deg, rgb(89, 19, 19), rgb(141, 89, 22), burlywood);
+    background-clip: text;
+    color: transparent;
+}
+
+.productListContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin: 50px 0 100px 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 530px) {
+    .menuHeading {
+        letter-spacing: 10px;
+        font-size: 30px;
+    }
+    .menuText {
+        font-size: 60px;
+    }
+    .productListContainer {
+        gap: 30px;
+    }
+}
+@media(max-width: 410px) {
+    .menuHeading {
+        letter-spacing: 5px;
+        font-size: 15px;
+    }
+    .menuText {
+        font-size: 30px;
+    }
+}

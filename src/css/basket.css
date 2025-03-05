@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+.basketContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+    justify-content: space-between;
+    margin: 40px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.orderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: flex-start;
+    flex: 1;
+    overflow-y: auto;
+    max-height: 100vh;
+    padding-right: 40px;
+    --sb-track-color: #c9d0d3;
+    --sb-thumb-color: #3aa29f;
+    --sb-size: 6px;
+}
+
+.productInBasketContainer {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(216, 201, 201);
+}
+
+.imgProductInBasket {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.propBasket {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sameProductName {
+    font-size: 20px;
+}
+
+.removeBtn {
+    border: 0;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(197, 8, 8);
+    margin-top: 15px;
+    transition: color 0.6s ease-out, transform 0.6s ease;
+    cursor: pointer;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.removeBtn:hover {
+    color: rgb(5, 5, 66);
+    transform: scale(1.1);
+}
+
+.totalSameProductAmount {
+    font-size: 25px;
+}
+
+.amountContainerAtBasket {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(213, 210, 210);
+    font-family: "Atkinson Hyperlegible Next", serif;
+}
+
+.minusBtnBasket,
+.plusBtnBasket {
+    border: 0;
+    cursor: pointer;
+    padding: 7px 15px;
+    font-size: 30px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    background-color: #fff;
+    transition: background-color 1s ease-out;
+}
+
+.minusBtnBasket:hover,
+.plusBtnBasket:hover {
+    background-color: #b3b3b6;
+}
+
+.amountValueBasket {
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Atkinson Hyperlegible Next", serif;
+}
+
+.totalSameProductAmount {
+    min-width: 110px;
+}
+
+
+.orderSummaryContainer {
+    width: 400px;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    border: 1px solid rgb(221, 214, 214);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.summaryProp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    border-bottom: 1px solid rgb(205, 195, 195);
+    padding-bottom: 30px;
+}
+
+.summaryPropIn,
+.totalAmountDiv {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.free {
+    color: #3aa29f;
+    font-size: 16px;
+}
+
+.totalAmount {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.checkoutBtn {
+    border: 0;
+    padding: 15px 25px;
+    background-color: #3aa29f;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.checkoutBtn:hover {
+    background-color: #104544;
+}
+
+.cardContent {
+    font-size: 0;
+}
+
+.orderContainer::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+.orderContainer::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 20px;
+}
+
+.orderContainer::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 20px;
+}
+
+@supports not(selector(::-webkit-scrollbar)) {
+    .orderContainer {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 1350px) {
+    .basketContainer {
+        gap: 30px;
+    }
+
+    .productInBasketContainer {
+        width: 600px;
+    }
+}
+
+@media(max-width: 1220px) {
+    .orderSummaryContainer {
+        width: 350px;
+    }
+}
+
+@media(max-width: 1170px) {
+    .basketContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .cardContent {
+        font-size: 50px;
+        margin: 50px 0;
+        border: 5px solid #104544;
+        color: #104544;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 750px) {
+    .basketContainer {
+        flex-direction: column;
+    }
+    .orderContainer {
+        max-height: 25vh;
+    }
+    .orderSummaryContainer {
+        width: 400px;
+        gap: 20px;
+        min-height: 400px;
+    }
+    .productInBasketContainer {
+        width: 500px;
+    }
+    .imgProductInBasket {
+        width: 120px;
+        height: 120px;
+    }
+    .amountContainerAtBasket {
+        gap: 10px;
+    }
+    .cardContent {
+        font-size: 0;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+}
+
+@media(max-width: 580px) {
+    .productInBasketContainer {
+        width: 400px;
+    }
+}
+
+@media(max-width: 500px) {
+    .productInBasketContainer {
+        width: 150px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .propBasket, .btnsInBasketContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .removeBtn {
+        margin-left: 40px;
+    }
+    .totalSameProductAmount {
+        min-width: max-content;
+    }
+    .orderSummaryContainer, .summaryProp, .summaryPropIn, .totalAmountDiv {
+        width: 250px;
+    }
+}
+
+@media(max-width: 350px) {
+    .orderSummaryContainer, .summaryProp, .summaryPropIn, .totalAmountDiv {
+        width: 200px;
+    }
+    .orderSummaryContainer h1 {
+        font-size: 20px;
+    }
+}

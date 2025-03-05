@@ -1,0 +1,128 @@
+.commentsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-style: normal;
+    margin-bottom: 50px;
+}
+
+.comment {
+    width: 600px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 10px;
+    border: 2px solid #c6c4c4;
+    box-shadow: rgba(192, 190, 190, 0.35) 0px 5px 15px;
+}
+
+.notComment {
+    width: 600px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #c6c4c4;
+    box-shadow: rgba(192, 190, 190, 0.35) 0px 5px 15px;
+}
+
+.notCommentText {
+    font-size: 25px;
+}
+
+.personInfo {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.personContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.personIcon {
+    font-size: 50px;
+}
+
+.personName {
+    font-size: 18px;
+    color: #17183b;
+}
+
+.personMail {
+    opacity: 0.7;
+    font-size: 15px;
+}
+
+.starContainer {
+    width: 150px;
+}
+
+.commentStar {
+    font-size: 30px;
+    color: rgb(255, 182, 13);
+}
+
+.productOpinion {
+    width: 550px;
+    text-align: left;
+    color: #17183b;
+    opacity: 0.8;
+}
+
+.commentDate {
+    width: 550px;
+    text-align: left;
+    opacity: 0.6;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 680px) {
+    .comment, .notComment {
+        width: 400px;
+    }
+    .personInfo, .productOpinion, .commentDate {
+        width: 350px;
+    }
+    .personInfo {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 410px) {
+    .comment, .notComment {
+        width: 250px;
+    }
+    .personInfo, .productOpinion, .commentDate {
+        width: 200px;
+    }
+    .personInfo {
+        flex-direction: column;
+    }
+    .notCommentText {
+        font-size: 10px;
+    }
+    
+}
+
+@media(max-width: 260px) {
+    .notComment {
+        width: 150px;
+    }
+}

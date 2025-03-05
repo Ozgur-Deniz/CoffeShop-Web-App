@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.mainHome {
+    background-image: url('./images/backgroundCoffe.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.mainHomeResponsive {
+    background-image: url('./images/backgroundCoffe.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    min-height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+body {
+    --sb-track-color: #c9d0d3;
+    --sb-thumb-color: #100b46;
+    --sb-size: 6px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 20px;
+    border: 1px solid #232E33;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+/*  RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+    .mainHome {
+        
+        min-height: 100vh;
+        
+    }
+}

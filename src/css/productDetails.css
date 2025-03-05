@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+.detailsPageGeneralContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.detailsPageContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 600px;
+}
+
+.backMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.backIcon {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.5s ease-out;
+}
+
+.backIcon:hover {
+    color: #6c6c76;
+}
+
+.backSpan {
+    color: grey;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleDetail {
+    color: #17183b;
+    font-size: 60px;
+}
+
+.wishIcon {
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.8s ease-in-out;
+}
+
+.wishIconTrue {
+    color: rgb(242, 40, 40);
+}
+
+.wishIconTrue:hover {
+    color: rgb(193, 27, 27);
+}
+
+.wishIconFalse:hover {
+    color: #707675;
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.priceDetailPage {
+    font-size: 50px;
+}
+
+.rateContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 40px;
+}
+
+.starIcon {
+    color: #ffb200;
+}
+
+.description {
+    color: #343554;
+    font-size: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amountContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(213, 210, 210);
+    font-family: "Atkinson Hyperlegible Next", serif;
+}
+
+.minusBtn,
+.plusBtn {
+    border: 0;
+    cursor: pointer;
+    padding: 7px 15px;
+    font-size: 30px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    background-color: #fff;
+    transition: background-color 1s ease-out;
+}
+
+.minusBtn:hover,
+.plusBtn:hover {
+    background-color: #b3b3b6;
+}
+
+.amountValue {
+    width: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Atkinson Hyperlegible Next", serif;
+}
+
+.addBtn {
+    border: 0;
+    padding: 15px 25px;
+    background-color: #3aa29f;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.addBtn:hover {
+    background-color: #104544;
+}
+
+.photoDetail {
+    margin-top: 107px;
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.showAllBtn {
+    width: 600px;
+    height: 50px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #161974;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.showAllBtn:hover {
+    background-color: #339390;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 1300px) {
+    .titleDetail {
+        font-size: 40px;
+    }
+
+    .detailsContainer {
+        width: 500px;
+        margin-left: 100px;
+    }
+
+    .backMenu {
+        margin-top: 60px;
+    }
+
+    .photoDetail {
+        width: 90%;
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+@media(max-width: 1040px) {
+    .detailsPageGeneralContainer {
+        gap: 0;
+    }
+
+    .detailsPageContainer {
+        flex-direction: column;
+    }
+
+    .detailsContainer {
+        width: 600px;
+        margin-left: 0;
+    }
+
+    .showAllBtn {
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+    .photoDetail {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 900px) {
+    .photoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media(max-width: 700px) {
+    .detailsContainer {
+        width: 500px;
+    }
+
+    .photoDetail {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .showAllBtn {
+        width: 400px;
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    .detailsContainer {
+        width: 400px;
+    }
+
+    .detailsPageContainer {
+        gap: 30px;
+    }
+}
+
+@media(max-width: 470px) {
+
+    .titleDetail,
+    .priceDetailPage,
+    .rateContainer {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .photoDetail {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .showAllBtn {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 450px) {
+    .detailsContainer {
+        width: 300px;
+    }
+
+    .titleContainer,
+    .priceContainer {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width: 410px) {
+    .photoDetail {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .showAllBtn {
+        width: 200px;
+    }
+}
+
+@media(max-width: 350px) {
+    .detailsContainer {
+        width: 200px;
+    }
+
+    .titleDetail {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 250px) {
+    .priceContainer {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .detailsContainer {
+        width: 150px;
+    }
+}

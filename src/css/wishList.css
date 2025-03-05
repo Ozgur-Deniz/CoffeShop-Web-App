@@ -1,0 +1,191 @@
+.wishListContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 40px;
+}
+
+.wishHeading {
+    text-decoration: underline;
+    margin-top: 20px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: rgb(8, 8, 79);
+    text-align: center;
+}
+
+.wishContainer {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(231, 221, 221);
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.imgAtWish {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.wishDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+
+.wishTitle {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.wishPrice {
+    font-size: 14px;
+    color: rgb(8, 8, 79);
+}
+
+
+.star {
+    color: #ffb200;
+    font-size: 16px;
+}
+
+.starRate {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+
+.buttonsAtWish {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btnWish {
+    border: 0;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 10px;
+    font-family: "Atkinson Hyperlegible Next", serif;
+    letter-spacing: 1px;
+    width: 120px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.wishGoBtn {
+    background-color: #3aa29f;
+}
+
+.wishGoBtn:hover {
+    background-color: #fff;
+    color: #3aa29f;
+}
+
+
+.wishDeleteBtn {
+    background-color: rgb(198, 11, 11);
+}
+
+.wishDeleteBtn:hover {
+    background-color: #fff;
+    color: rgb(198, 11, 11);
+}
+
+.drawerPaper::-webkit-scrollbar {
+    width: 6px;
+}
+
+.drawerPaper::-webkit-scrollbar-track {
+    background: #c9d0d3;
+    border-radius: 20px;
+}
+
+.drawerPaper::-webkit-scrollbar-thumb {
+    background: #100b46;
+    border-radius: 20px;
+    border: 1px solid #232E33;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .wishContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .imgAtWish {
+        width: 100px;
+        height: 100px;
+    }
+
+    .wishTitle,
+    .wishPrice {
+        font-size: 16px;
+    }
+
+    .btnWish {
+        width: 140px;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wishListContainer {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .wishContainer {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .imgAtWish {
+        width: 80px;
+        height: 80px;
+    }
+
+    .wishHeading {
+        font-size: 30px;
+    }
+
+    .btnWish {
+        width: 120px;
+        font-size: 12px;
+        padding: 10px;
+    }
+}

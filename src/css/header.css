@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.headerContainer {
+    width: 100%;
+    border-bottom: 1.5px solid rgb(221, 219, 219);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    cursor: pointer;
+    transition: color 0.8s ease;
+}
+
+.logoContainer:hover {
+    color: #8e90be;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.logoText {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #252761;
+    letter-spacing: 1.5px;
+}
+
+sup {
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #17183b;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.page {
+    cursor: pointer;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+
+.page:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+.custom-tooltip {
+    background-color: #fff !important;
+    color: #0c5a40 !important;
+}
+
+.wishList {
+    font-size: 25px;
+    color: #FF748B;
+    cursor: pointer;
+    transition: color 0.6s ease-in-out;
+}
+
+.wishList:hover {
+    color: #f5163b;
+}
+
+.divider {
+    width: 1.5px;
+    height: 80px;
+    background-color: rgb(221, 219, 219);
+    margin-right: 10px;
+}
+
+.basketDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.basket {
+    font-size: 30px;
+    color: #2D336B;
+    cursor: pointer;
+    transition: color 0.6s ease-in-out;
+}
+
+.basket:hover {
+    color: #e268cf;
+}
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 950px) {
+    .pages {
+        gap: 20px;
+        font-size: 12px;
+        
+    }
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+    .logoText {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .headerContainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .divider {
+        height: 60px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 370px) {
+    .pages {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .wishList {
+        font-size: 20px;
+    }
+    .divider {
+        height: 40px;
+    }
+    .basket {
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contactMain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.headerContact {
+    color: rgb(6, 6, 63);
+    font-size: 45px;
+    letter-spacing: 1.5px;
+}
+
+.contactSpan {
+    color: #3aa29f;
+}
+
+.shortText {
+    max-width: 400px;
+    opacity: 0.6;
+}
+
+.input {
+    width: 400px;
+}
+
+.select {
+    width: 400px;
+}
+
+.contactBtn {
+    width: 200px;
+    margin-left: 100px;
+}
+
+.productsGeneralContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.productsContainer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    flex: 1;
+    overflow-y: auto;
+    max-height: 65vh;
+    --sb-track-color: #c9d0d3;
+    --sb-thumb-color: #3aa29f;
+    --sb-size: 6px;
+    border-radius: 20px 0 0 20px;
+    -webkit-box-shadow: -8px 9px 35px -12px rgba(199, 199, 199, 0.65);
+    -moz-box-shadow: -8px 9px 35px -12px rgba(199, 199, 199, 0.65);
+    box-shadow: -8px 9px 35px -12px rgba(199, 199, 199, 0.65);
+}
+
+.productsContainerHeading {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid #c9d0d3;
+    padding: 10px;
+
+}
+
+.contactH3 {
+    letter-spacing: 3px;
+}
+
+.productContainer {
+    width: 300px;
+    height: 100px;
+    color: #06063f;
+    margin: 20px 0px;
+    border-bottom: 2px solid #c9d0d3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.productContainer input[type="radio"] {
+    display: none;
+}
+
+.customRadio {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #9ba1a3;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.customRadio:hover {
+    border-color: #c9d0d3;
+}
+
+.productContainer input[type="radio"]:checked+.customRadio::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #3aa29f;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+
+.productImgContact {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgba(154, 152, 152, 0.35) 0px 5px 15px;
+}
+
+.productNameContact {
+    width: 95px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.productsContainer::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+.productsContainer::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 20px;
+}
+
+.productsContainer::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 20px;
+}
+
+@supports not(selector(::-webkit-scrollbar)) {
+    .productsContainer {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 1100px) {
+    .contactContainer {
+        gap: 50px;
+    }
+    .headerContact {
+        font-size: 35px;
+    }
+    .shortText {
+        max-width: 350px;
+    }
+    .input, .select {
+        width: 350px;
+    }
+    .contactBtn {
+        margin-left: 75px;
+    }
+    .productsContainerHeading, .productsContainer {
+        width: 350px;
+    }
+}
+
+@media(max-width: 840px) {
+    .contactContainer {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+    .productsGeneralContainer {
+        margin-top: 60px;
+    }
+}
+
+@media(max-width: 450px) {
+    .productsContainerHeading, .productsContainer {
+        width: 300px;
+    }
+    .contactH3 {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .productContainer {
+        width: 200px;
+    }
+    .productImgContact {
+        width: 50px;
+        height: 50px;
+    }
+    .customRadio {
+        width: 10px;
+        height: 10px;
+    }
+    .productNameContact {
+        font-size: 12px;
+    }
+    .headerContact {
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+    .shortText {
+        max-width: 300px;
+        font-size: 12px;
+    }
+    .input, .select {
+        width: 300px;
+    }
+    .contactBtn {
+        margin-left: 50px;
+    }
+}
+
+@media(max-width: 350px) {
+    .productsContainerHeading {
+        width: 150px;
+    }
+    .productsContainer {
+        width: 200px;
+    }
+    .productContainer {
+        width: 150px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        border: 2px solid #c9d0d3;
+        border-radius: 20px;
+    }
+    .productNameContact {
+        text-align: center;
+    }
+    .headerContact {
+        font-size: 25px;
+    }
+    .shortText {
+        max-width: 200px;
+    }
+    .input, .select {
+        width: 200px;
+    }
+    .contactBtn {
+        margin-left: 0;
+    }
+}

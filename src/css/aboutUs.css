@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+.aboutGeneralContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.theBest {
+  font-size: 50px;
+  letter-spacing: 10px;
+  margin-bottom: 100px;
+  font-family: "Atkinson Hyperlegible Next", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  opacity: 0.4;
+  background: linear-gradient(180deg, rgb(89, 19, 19), rgb(141, 89, 22), burlywood);
+  background-clip: text;
+  color: transparent; 
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.galleryContainer {
+  width: 700px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery-container {
+  /* max-width: 100%; */
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.slide-container {
+  width: 600px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.slide-image {
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.nav {
+  background: #f0eee4 !important;
+  transition: background-color 0.8s ease-in-out;
+}
+
+.nav:hover {
+  background-color: rgb(218, 216, 216) !important;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 985px) {
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .theBest {
+    margin-bottom: 0;
+    margin-top: 30px;
+  }
+  /* .slide-image {
+    width: 50%;
+  } */
+  .slide-container {
+    width: 400px;
+  }
+  .slide-image {
+    height: 200px;
+  }
+}
+
+@media(max-width: 620px) {
+  .theBest {
+    font-size: 35px;
+    /* margin-top: 0; */
+  }
+}
+
+@media(max-width: 520px) {
+  .homeText {
+    width: 300px;
+  }
+  .homeText1 {
+    font-size: 15px;
+  }
+  .homeText2 {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 460px) {
+  .theBest {
+    font-size: 20px;
+  }
+  .slide-container {
+    width: 300px;
+  }
+  .slide-image {
+    height: 150px;
+  }
+}
+
+@media(max-width: 330px) {
+  .theBest {
+    letter-spacing: 3px;
+  }
+  .homeText {
+    width: 200px;
+  }
+  .slide-container {
+    width: 200px;
+  }
+  .homeText1 {
+    letter-spacing: 2px;
+  }
+}
