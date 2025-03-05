@@ -8,12 +8,12 @@ To provide a better understanding of the CoffeeShop app’s user interface and f
 
 ### App Homepage
 ```md
-![Homepage Screenshot](./public/assets/Home.png)
+![Homepage Screenshot](assets/Home.png)
 ```
 
 ### Menu Page
 ```md
-![Menu Screenshot](./public/assets/Menu.png)
+![Menu Screenshot](./assets/Menu.png)
 ```
 
 ### Product Details Page
