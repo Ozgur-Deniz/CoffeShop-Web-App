@@ -7,44 +7,28 @@ A simple and responsive web application for The Coffee Co., a coffee shop that s
 To provide a better understanding of the CoffeeShop app’s user interface and functionality, here are some screenshots of the application:
 
 ### App Homepage
-```md
-![Homepage Screenshot](./public/assets/Home.png)
-```
+![Homepage Screenshot](https://github.com/Ozgur-Deniz/CoffeShop-Web-App/blob/main/public/assets/Home.png)
 
 ### Menu Page
-```md
-![Menu Screenshot](./public/assets/Menu.png)
-```
+![Menu Screenshot](https://github.com/Ozgur-Deniz/CoffeShop-Web-App/blob/main/public/assets/Menu.png)
 
 ### Product Details Page
-```md
-![Product Details Screenshot](./public/assets/ProductDetails.png)
-```
+![Product Details Screenshot](https://github.com/Ozgur-Deniz/CoffeShop-Web-App/blob/main/public/assets/ProductDetails.png)
 
 ### About Us Page
-```md
-![About Us Screenshot](./public/assets/AboutUs.png)
-```
+![About Us Screenshot](https://github.com/Ozgur-Deniz/CoffeShop-Web-App/blob/main/public/assets/AboutUs.png)
 
 ### Add Comment Page
-```md
-![Add Comment Screenshot](./public/assets/AddComment.png)
-```
+![Add Comment Screenshot](https://github.com/Ozgur-Deniz/CoffeShop-Web-App/blob/main/public/assets/AddComment.png)
 
 ### Wish List Page
-```md
-![Wish List Screenshot](./public/assets/WishList.png)
-```
+![Wish List Screenshot](https://github.com/Ozgur-Deniz/CoffeShop-Web-App/blob/main/public/assets/WishList.png)
 
 ### Cart and Checkout Page
-```md
-![Cart Screenshot](./public/assets/Basket.png)
-```
+![Cart Screenshot](https://github.com/Ozgur-Deniz/CoffeShop-Web-App/blob/main/public/assets/Basket.png)
 
 ### Footer Page
-```md
-![Footer Screenshot](./public/assets/Footer.png)
-```
+![Footer Screenshot](https://github.com/Ozgur-Deniz/CoffeShop-Web-App/blob/main/public/assets/Footer.png)
 
 ## 🚀 Features
 - **Image Gallery**: Display a collection of images showcasing the coffee shop’s products and atmosphere.
