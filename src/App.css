@@ -13,7 +13,7 @@
 }
 
 .mainHome {
-    background-image: url('./images/backgroundCoffe.png');
+    background-image: url('/images/backgroundCoffe.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 }
 
 .mainHomeResponsive {
-    background-image: url('./images/backgroundCoffe.png');
+    background-image: url('/images/backgroundCoffe.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
